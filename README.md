@@ -22,7 +22,7 @@ I plan to add a research section as well, including papers detailing specific in
 printers. For instance, how adjustable acceleration on Klipper affects print quality found in a quantitaive
 way.
 
-### How to Choose an Operating System
+# How to Choose an Operating System
 
 ## Sailfish
 If you are still running the original Makerbot firmware, and don't want to spend any money on a raspberry pi,
@@ -42,4 +42,4 @@ shaper, linear advance, an actively supported firmware, and access to automatic 
 I highly recommend Klipper if you are restoring one of these printers. It boosts their capabilities ten-fold,
 and allows you an upgrade path via current hardware support that is locked off to you in Sailfish.
 
-### Instructions
+# Instructions
