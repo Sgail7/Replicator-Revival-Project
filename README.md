@@ -12,11 +12,38 @@ about these printers is hard to come by, and finding people who have a lot of ex
 with them is even harder!
 
 # Table of Contents
-- [Klipper](https://github.com/Sgail7/Replicator-Revival-Project#klipper)
-- [Sailfish](https://github.com/Sgail7/Replicator-Revival-Project#sailfish)
-- [Hardware](https://github.com/Sgail7/Replicator-Revival-Project#hardware)
-- [Documentation](https://github.com/Sgail7/Replicator-Revival-Project#documentation)
 - [How to Choose Your Firmware](https://github.com/Sgail7/Replicator-Revival-Project#how-to-choose-an-operating-system)
+- [Klipper](https://github.com/Sgail7/Replicator-Revival-Project#klipper)
+    - [Installation]()
+    - [Configs]()
+    - [Macros]()
+    - [Nevermore Filter]()
+    - [Nozzle Alignment for 2X]()
+    - [Common Setting Values]()
+    - [PrusaSlicer and SuperSlicer Profiles]()
+- [Sailfish](https://github.com/Sgail7/Replicator-Revival-Project#sailfish)
+    - [Installation]()
+    - [ReplicatorG]()
+    - [Nozzle Alignment]()
+    - [Common Setting Values]()
+    - [GPX](https://github.com/markwal/GPX)]
+    - [PrusaSlicer Profiles]()
+- [Hardware](https://github.com/Sgail7/Replicator-Revival-Project#hardware)
+    - [Bed Warping Information and Potential Fix]()
+    - [X-Axis Cable Strain Relief]()
+    - [General Maintenance]()
+    - [Bed Surface]()
+    - [Replacement Hardware]()
+    - [Power Supply Information]()
+- [Documentation](https://github.com/Sgail7/Replicator-Revival-Project#documentation)
+    - [BOMs](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/BOMs)
+    - [Printer CADs]()
+    - [Printer Parts](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Printer%20Parts)
+    - [Mightyboard]()
+        - [Revision E]()
+        - [Revision G]()
+        - [Revision H]()
+    - []
 
 ## Klipper
 The Klipper folder comprises all gathered information on running the [Klipper](https://github.com/Klipper3d/klipper) firmware on the Replicator
@@ -37,11 +64,14 @@ The Documentation folder comprises all information concerning the construction a
 but is not limited to, full Bills of Materials of the Replicator 1, 2, and 2X, full CAD models of the Replicator 1, 2, and 2X,
 and short write-ups of the benefits of different modifications to the Replicator 1, 2, and 2X.
 
+## Printed Parts
+The Printed Parts folder comprises all information concerning the addition of printed parts to these printers. This is comprised of all of the most useful printed parts that I have found or made for these printers. The purpose of this section is to reduce confusion on what available models will work best or be the most useful.
+
 # How to Choose an Operating System
 
 **WARNING**- Sailfish is no longer actively supported! If you choose to install Sailfish as your firmware, do not expect any updates or support for bugs that you may find!
 
-**NOTE**- Changing the firmware on your printer is in no way required. If you are happy with the results from the Original Makerbot Industries firmware, then you can ignore the Klipper and Sailfish sections entirely! Significant information and improvement can still be gained from the [Hardware](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Hardware) and [Documentation](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation) sections alone.
+**NOTE**- Changing the firmware on your printer is in no way required. If you are happy with the results from the original Makerbot Industries firmware, then you can ignore the Klipper and Sailfish sections entirely! Significant information and improvement can still be gained from the [Hardware](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Hardware) and [Documentation](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation) sections alone.
 
 ## Klipper
 If you are seeking modern print quality and speed, along with features not supported by Sailfish, then
