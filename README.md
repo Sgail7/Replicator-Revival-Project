@@ -26,7 +26,7 @@ with them is even harder!
     - [ReplicatorG]()
     - [Nozzle Alignment]()
     - [Common Setting Values]()
-    - [GPX](https://github.com/markwal/GPX)]
+    - [GPX](https://github.com/markwal/GPX)
     - [PrusaSlicer Profiles]()
 - [Hardware](https://github.com/Sgail7/Replicator-Revival-Project#hardware)
     - [Bed Warping Information and Potential Fix]()
@@ -44,6 +44,8 @@ with them is even harder!
         - [Revision G]()
         - [Revision H]()
     - []
+
+# Description of Main Directories
 
 ## Klipper
 The Klipper folder comprises all gathered information on running the [Klipper](https://github.com/Klipper3d/klipper) firmware on the Replicator
