@@ -12,8 +12,9 @@ about these printers is hard to come by, and finding people who have a lot of ex
 with them is even harder!
 
 # Table of Contents
-- [How to Choose Your Firmware](https://github.com/Sgail7/Replicator-Revival-Project#how-to-choose-an-operating-system)
-- [Klipper](https://github.com/Sgail7/Replicator-Revival-Project#klipper)
+- **[How to Choose Your Firmware](https://github.com/Sgail7/Replicator-Revival-Project#how-to-choose-an-operating-system)**
+
+- **[Klipper](https://github.com/Sgail7/Replicator-Revival-Project#klipper)**
     - [Installation]()
     - [Configs]()
     - [Macros]()
@@ -22,7 +23,7 @@ with them is even harder!
     - [Common Setting Values]()
     - [PrusaSlicer and SuperSlicer Profiles]()
 
-- [Sailfish](https://github.com/Sgail7/Replicator-Revival-Project#sailfish)
+- **[Sailfish](https://github.com/Sgail7/Replicator-Revival-Project#sailfish)**
     - [Installation]()
     - [ReplicatorG]()
     - [Nozzle Alignment]()
@@ -30,15 +31,15 @@ with them is even harder!
     - [GPX](https://github.com/markwal/GPX)
     - [PrusaSlicer Profiles]()
 
-- [Hardware](https://github.com/Sgail7/Replicator-Revival-Project#hardware)
+- **[Hardware](https://github.com/Sgail7/Replicator-Revival-Project#hardware)**
     - [Bed Warping Information and Potential Fix]()
     - [X-Axis Cable Strain Relief]()
     - [General Maintenance]()
     - [Bed Surface]()
     - [Replacement Hardware]()
     - [Power Supply Information]()
-    
-- [Documentation](https://github.com/Sgail7/Replicator-Revival-Project#documentation)
+
+- **[Documentation](https://github.com/Sgail7/Replicator-Revival-Project#documentation)**
     - [BOMs](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/BOMs)
     - [Printer CADs]()
     - [Printer Parts](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Printer%20Parts)
