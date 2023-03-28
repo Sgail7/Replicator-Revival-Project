@@ -21,6 +21,7 @@ with them is even harder!
     - [Nozzle Alignment for 2X]()
     - [Common Setting Values]()
     - [PrusaSlicer and SuperSlicer Profiles]()
+
 - [Sailfish](https://github.com/Sgail7/Replicator-Revival-Project#sailfish)
     - [Installation]()
     - [ReplicatorG]()
@@ -28,6 +29,7 @@ with them is even harder!
     - [Common Setting Values]()
     - [GPX](https://github.com/markwal/GPX)
     - [PrusaSlicer Profiles]()
+
 - [Hardware](https://github.com/Sgail7/Replicator-Revival-Project#hardware)
     - [Bed Warping Information and Potential Fix]()
     - [X-Axis Cable Strain Relief]()
@@ -35,6 +37,7 @@ with them is even harder!
     - [Bed Surface]()
     - [Replacement Hardware]()
     - [Power Supply Information]()
+    
 - [Documentation](https://github.com/Sgail7/Replicator-Revival-Project#documentation)
     - [BOMs](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/BOMs)
     - [Printer CADs]()
@@ -43,7 +46,6 @@ with them is even harder!
         - [Revision E]()
         - [Revision G]()
         - [Revision H]()
-    - []
 
 # Description of Main Directories
 
