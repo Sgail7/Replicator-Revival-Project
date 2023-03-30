@@ -88,10 +88,10 @@ I highly recommend Klipper if you are restoring one of these printers. It boosts
 and allows you an upgrade path via modern hardware support that is locked off to you in Sailfish.
 
 ## Sailfish
-If you are still running the original Makerbot firmware, and don't want any signficant changes to the way your printer operates, Sailfish is for you! Sailfish was made as a competitor to Marlin some years ago, and was specifically to be fast on 8-bit based mainboards. It is compatable with the Makerbot proprietary software and their proprietary file format, known as `.x3g`.
+If you are still running the original Makerbot firmware, and don't want any signficant changes to the way your printer operates, Sailfish is for you! Sailfish was made as a competitor to Marlin some years ago, and was made specifically to be fast on 8-bit based mainboards. It is compatable with the Makerbot proprietary software and their proprietary file format, known as `.x3g`.
 
 This software is the best choice if you want your printer up and running fast. It will work with your existing 
-makerbot slicing software, and will be the most familiar in terms of interface on the printer when compared
+Makerbot slicing software, and will be the most familiar in terms of interface on the printer when compared
 to the original makerbot software.
 
 # Notes
