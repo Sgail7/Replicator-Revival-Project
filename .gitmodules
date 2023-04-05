@@ -4,3 +4,9 @@
 [submodule "Sailfish/GPX"]
 	path = Sailfish/GPX
 	url = https://github.com/markwal/GPX
+[submodule "Sailfish/ReplicatorG"]
+	path = Sailfish/ReplicatorG
+	url = https://github.com/makerbot/ReplicatorG
+[submodule "Klipper/Nevermore_Filters"]
+	path = Klipper/Nevermore_Filters
+	url = https://github.com/nevermore3d/Nevermore_Micro
