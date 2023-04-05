@@ -1,0 +1,6 @@
+[submodule "Sailfish/GPXUi"]
+	path = Sailfish/GPXUi
+	url = https://github.com/markwal/GpxUi
+[submodule "Sailfish/GPX"]
+	path = Sailfish/GPX
+	url = https://github.com/markwal/GPX
