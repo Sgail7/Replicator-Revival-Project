@@ -15,21 +15,23 @@ with them is even harder!
 - **[How to Choose Your Firmware](https://github.com/Sgail7/Replicator-Revival-Project#how-to-choose-an-operating-system)**
 
 - **[Klipper](https://github.com/Sgail7/Replicator-Revival-Project#klipper)**
-    - [Installation]()
-    - [Configs]()
-    - [Macros]()
-    - [Nevermore Filter]()
-    - [Nozzle Alignment for 2X]()
+    - [Installation](https://github.com/Sgail7/Replicator-Revival-Project/blob/main/Klipper/README_Klipper.md)
+    - [Configs](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/Configs)
+    - [Macros](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/Macros)
+    - [Nevermore Filter](https://github.com/nevermore3d/Nevermore_Micro/tree/ddc341e032cfdb93479e6ed0c258ce544beba87f)
+    - [Nozzle Alignment for 2X](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/Printer_Tuning)
     - [Common Setting Values]()
-    - [PrusaSlicer and SuperSlicer Profiles]()
+    - [PrusaSlicer Profiles](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/PrusaSlicer%20Profiles)
+    - [SuperSlicer Profiles](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/SuperSlicer%20Profiles)
 
 - **[Sailfish](https://github.com/Sgail7/Replicator-Revival-Project#sailfish)**
-    - [Installation]()
-    - [ReplicatorG]()
+    - [Installation](https://github.com/Sgail7/Replicator-Revival-Project/blob/main/Sailfish/README_Sailfish.md)
+    - [ReplicatorG](https://github.com/makerbot/ReplicatorG/tree/d6f2b07785a5a5f1e172fb87cb4303b17c575d5d)
     - [Nozzle Alignment]()
     - [Common Setting Values]()
     - [GPX](https://github.com/markwal/GPX)
-    - [PrusaSlicer Profiles]()
+    - [GPXUi](https://github.com/markwal/GpxUi/tree/a081cbf4529dfca1eb040768e2729b70d6e36769)
+    - [PrusaSlicer Profiles](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Sailfish/PrusaSlicer%20Profiles)
 
 - **[Hardware](https://github.com/Sgail7/Replicator-Revival-Project#hardware)**
     - [Bed Warping Information and Potential Fix]()
@@ -41,12 +43,12 @@ with them is even harder!
 
 - **[Documentation](https://github.com/Sgail7/Replicator-Revival-Project#documentation)**
     - [BOMs](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/BOMs)
-    - [Printer CADs]()
+    - [CAD Assembiles](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/CAD%20Assemblies)
     - [Printer Parts](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Printer%20Parts)
-    - [Mightyboard]()
-        - [Revision E]()
-        - [Revision G]()
-        - [Revision H]()
+    - [Mightyboard](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Mightyboard)
+        - [Revision E](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Mightyboard/Revision%20E)
+        - [Revision G](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Mightyboard/Revision%20G)
+        - [Revision H](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Mightyboard/Revision%20H)
 
 # Description of Main Directories
 
