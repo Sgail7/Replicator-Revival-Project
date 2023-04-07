@@ -34,7 +34,7 @@ with them is even harder!
     - [PrusaSlicer Profiles](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Sailfish/PrusaSlicer%20Profiles)
 
 - **[Hardware](https://github.com/Sgail7/Replicator-Revival-Project#hardware)**
-    - [Bed Warping Information and Potential Fix]()
+    - [Bed Warping Information and Potential Fix](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Hardware/Bed%20Fixes)
     - [X-Axis Cable Strain Relief]()
     - [General Maintenance]()
     - [Bed Surface]()
