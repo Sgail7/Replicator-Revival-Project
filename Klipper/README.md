@@ -1,3 +1,13 @@
+# Table of Contents
+
+- [Installation](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#installation)
+- [Configs](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#configs)
+- [Nozzle Alignment](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#nozzle-alignment)
+- [Printer Profiles](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#printer-profile-information)
+- [Nevermore Filter](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#nevermore-filter)
+- [Macros](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#nevermore-filter)
+- [BlTouch](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#nevermore-filter)
+
 # Installation
 
 ## KIAUH
