@@ -197,7 +197,7 @@ These configs are based on the example configs provided in Dockterj's Klipper Fo
 
 **This section is only relevant for the Replicator 1 Dual and Replicator 2X!**
 
-**Note: To run this gcode, you will need to be using the Center Origin Configuration file for your printer! Once you have obtained your nozzle offset, you may switch back to the Front Left Corner Origin Configuration file and transfer the values that you found to that configuration file.**
+**Note: This gcode is written for a printer with a center origin! It will not work if you are using anything other than a center origin configuration file! Once you have obtained your nozzle offset, you may switch back to a configuration file with a different origin and translate the values that you found to the coordinates of that configuration file.**
 
 This fine piece of gcode was adapted from the [nozzle alignment script](https://github.com/makerbot/ReplicatorG/blob/master/machines/replicator2/onboard/nozzleCalibration.gcode) found in the ReplicatorG source code. It preforms the exact same alignment process as the original Makerbot firmware did and is by far the easiest way to calibrate the x and y nozzle offset of these printers.
 
@@ -239,6 +239,69 @@ All documentation of this macro can be found in its original repository, found [
 
 # Macros
 
+Macros are arguably the most useful aspect of Klipper as a firmware. They allow for customizability of pretty much any functionality of the firmware. All of the macros that I currently use can be found in the [Macros Folder](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/Macros). Any of these macros can be included in your printer.cfg file, simply add a line like the following to the start of your printer.cfg.
+```
+#Short description of macro
+[include example.cfg]
+```
+Below are short descriptions of each of the macros included in this repository and what they do.
+
+<details><summary>Beeper_Commands.cfg</summary>
+<p>
+
+This macro includes commands enabling gcode commands for `M300` and `M72`.
+
+M300 allows for the beeper on the mightyboard to be controlled by klipper. Setting a value `S` defines the frequency that the beeper outputs; setting a value `P` defines the duration of the tone that is defined by `S`. `S` is defined in Hertz (Hz), and `P` is defined in milliseconds(ms). An example of its usage would be `M300 S440 P1000`, running this example command would play a tone of 440 Hz for 1000 ms, or in other words it would play an A note for 1 second.
+
+M72 has mappings to play various short songs. Setting a value `P` defines which song it plays.
+
+- `P0` plays a "print error" song
+- `P1` plays a "print done ta-da" song
+- `P3` plays a "startup" tune
+- `P4` plays a "makerbot tv" tune
+- `P5` plays a short section of Beethoven's 5th Symphony
+- `P9` plays a short section of Can-Can by Jacques Offenbach
+
+As an example, `M72 P5` would play the short section of Beethoven's 5th Symphony.
+
+</p>
+</details>
+
+<details><summary>Important_Gcode_Functionality_Macros.cfg</summary>
+<p>
+
+</p>
+</details>
+
+<details><summary>Input_Shaper.cfg</summary>
+<p>
+
+</p>
+</details>
+
+<details><summary>LED_Macros.cfg</summary>
+<p>
+
+</p>
+</details>
+
+<details><summary>Nevermore_Filter.cfg</summary>
+<p>
+
+</p>
+</details>
+
+<details><summary>Printer_Tuning_Macros.cfg</summary>
+<p>
+
+</p>
+</details>
+
+<details><summary>Temps.cfg</summary>
+<p>
+
+</p>
+</details>
 
 # Bltouch
 
