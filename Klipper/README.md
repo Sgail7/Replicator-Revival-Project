@@ -270,17 +270,47 @@ As an example, `M72 P5` would play the short section of Beethoven's 5th Symphony
 <details><summary>Important_Gcode_Functionality_Macros.cfg</summary>
 <p>
 
+This macro includes commands enabling gcode commands for `M900`, `M600`, and `M204`.
+
+M900 allows for the Pressure Advance value used by the selected extruder to be set mid-print. This is extremely useful as it allows for a gcode command to be set in the slicer for each filament, preventing the user from having to change their pressure advance value manually in their printer.cfg every time the filament is changed. It imitates marlin's M900 command, using a value `K` to set pressure advance. As an example, `M900 K0.4` would set the pressure advance to 0.4.
+
+M600 allows for a filament swap mid-print. This means that, at a certain layer height, an M600 command can be sent by the slicer to pause the print, allowing you to change the filament, and then start the print once again. The most common use of this command is color swapping filament mid-print, enabling multiple colors to be used in one print. The usage of this command is simply `M600`, there are no associated values with it.
+
+M204 allows for the printer's acceleration to be set mid-print. This means that different acceleration values can be used for different parts of the model. For example, infill can be run at 3000 mm/s^2 to reduce print times, while outer perimeters can be run at 1500 mm/s^2, allowing for higher quality printing. A value `S` can be set to define the acceleration of the printer. As an example, `M204 S2000` will set the printer to run at 2000 mm/s^2. Keep in mind that klipper will not allow acceleration values higher than its `max_accel` definition, it will simply default to its `max_accel` definition's set value when an acceleration higher than it is sent via M204.
+
 </p>
 </details>
 
 <details><summary>Input_Shaper.cfg</summary>
 <p>
 
+This macro enables input shaping via an ADXL 345 connected to a raspberrypi. This macro adds no commands, it is purely a convience macro to allow for one line to be uncommented to enable input shaping. For a guide on how to set up your printer to run input shaper, please visit [The official Klipper documentation on input shaping](https://www.klipper3d.org/Measuring_Resonances.html).
+
 </p>
 </details>
 
 <details><summary>LED_Macros.cfg</summary>
 <p>
+
+This macro add convient commands to control the LED strip found on the Makerbot 2 and 2X. There is a short tutorial inside of the [LED_Macros.cfg](https://github.com/Sgail7/Replicator-Revival-Project/blob/main/Klipper/Macros/LED_Macros.cfg) on how to make your own LED macro, should the provided ones not include what you are looking for.
+
+Below is a list of all included LED commands found in this macro:
+
+- White
+- Blue
+- Red
+- Yellow
+- Green
+- Purple
+- Orange
+- LED_Off
+    - Turns off the LED strip
+- LED_Heating
+    - Essentially the same as Orange, just a different name for convience when including in start gcode.
+- LED_Alert
+    - Plays a sequence of Red, Green, then Blue, followed by a low intensity white light to indicate when the printer has been stopped due to an issue.
+- LED_Print_Finished
+    - Changes the LED color to Green for 20 seconds, followed by an indefinite Orange light.
 
 </p>
 </details>
