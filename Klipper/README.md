@@ -185,9 +185,13 @@ of your printer and to learn the specifics of what Klipper is capable of.
 
 # Configs
 
-Configuration Files for the Replicator 1, 2, and 2X can all be found in the [Configs Folder](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/Configs)
+Configuration files for the Replicator 1, 2, and 2X can all be found in the [Configs folder](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/Configs)
 
-These configs are based on the example configs provided in Dockterj's Klipper Fork and the official config example repository. I have tuned my configs over many more hours than I care to admit. Mostly, these tunings include macros to add functionality and ease of use to your Replicator and provide all of the sections that I have found necessary to get the most out of these printers. Please choose the correct configuration for your printer, and also choose the correct Slicer Profile to accompany it.
+I have taken a modular approach to including functionality in these printer configs. The `printer.cfg` file itself has the bare essentials to facilitate functionality of the printer. Other functions, such as the configurations necessary for input shaper or beeper commands, can be found in the [Macros folder](Sgail7/Replicator-Revival-Project/Klipper/Macros). Any of these macros can be included at the discretion of the user, depending on their needs and their printer's capabilities.
+
+These configs are based on the example configs provided in Dockterj's Klipper Fork and the official config example repository. I have tuned my configs over many more hours than I care to admit. Mostly, these tunings include macros to add functionality and ease of use to your Replicator and provide all of the sections that I have found necessary to get the most out of these printers. Please choose the correct configuration for your printer, and also choose the correct slicer profile to accompany it.
+
+
 
 # Nozzle Alignment
 
@@ -212,10 +216,26 @@ For the Y-axis: Since the offset of line #7 is 0.00mm, I can find that there is 
 
 **Please be sure to use the correct origin profile for your printer configuration. The Center Origin profiles will not work with a Left Front Origin configured printer and vice versa.**
 
-Both PrusaSlicer and SuperSlicer profiles have been provided for these printers. I highly recommend using SuperSlicer, as it gives more control over the part cooling fan, which I have found to be very helpful for ensuring the quality of the top and bottom solid infill on parts printed at higher speeds. If you are using a PrusaSlicer version older than 2.6, I suggest commenting the M204 macro out of your printer profile. Since PrusaSlicer did not have a Klipper gcode flavor until version 2.6, certain acceleration commands would cause errors in the M204 macro that I have used, causing prints to fail. Luckily, this usually happens at the very beginning of a print, not wasting much filament or time, however, it is still annoying, so please be weary of this quirk.
+PrusaSlicer is currently the slicer of choice for both my personal use and use at my University's Makerspace. I recommend using these profiles, as they will be up-to-date and are much more thoroughly tested. SuperSlicer is also a good option for these printers, as the extra part cooling fan settings it provides can help overcome issues of poor top solid infill finishes. If you are using a PrusaSlicer version that is older than 2.6, I highly recommend commenting out the M204 macro found in the [`Important_Gcode_Functionality_Macros.cfg`](Sgail7/Replicator-Revival-Project/Klipper/Macros/Important_Gcode_Functionality_Macros.cfg) file. I found that certain acceleration commands would cause errors in this macro, causing prints to fail.
 
 # Nevermore Filter
 
+## What a Nevermore Filter is
+The Makerbot Replicator 2X was originally intended to be an ABS only printer. While it did achieve that goal, it didn't provide any solution for the fumes that ABS produces. Luckily the team at Nevermore3d has designed a VOC particle filter that can significantly reduce these fumes, to the point that they don't pose a risk to the health of living creatures. It also filters out the smell of ABS, making it much more pleasent to deal with. If you are going to be printing a lot of ABS or otherwise hazardous filaments, I highly recommend building one of these filters.
+
+## Sealing up the Makerbot
+
+The [Nevermore Micro](https://github.com/nevermore3d/Nevermore_Micro/tree/ddc341e032cfdb93479e6ed0c258ce544beba87f) was designed to be a recirculating filter, which means that the better the Makerbot frame can be sealed up, the better. For sealing up large gaps, I recommend checking out the [Printed Parts](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Printed%20Parts) section of this github. For the interior parts of the printer, such as the holes in each of the 4 corners of the bottom plate, I recommend using masking tape or painter's tape. Of course, any type of tape can be used for this purpose, however, masking or painter's will allow for an easy, clean removal of the tape without any extra hassle if you decide to stop printing ABS or other hazardous filaments. As for the front swinging panel, I recommend putting weather stripping around the inside opening for the panel, and again checking out the [Printed Parts](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Printed%20Parts) section to attach a latch to keep the panel tightly sealed when printing.
+
+## Electronics
+
+Since the Mightyboard Rev G and Rev H have no extra PWM controllable fan ports, we have to make use of a MOSFET board and the Mightyboard's provided 24V or 5V header. Start by soldering a short wire to the `gnd` section of the MOSFET board, then connecting that wire to the `Vin-` terminal on the same board. Now take two lengths of wire and connect one to the `Vin+` terminal, and the other to the `Vin-` terminal, the `Vin-` terminal should have two wires going into it. Solder a length of wire to the `trig/PWM` section of the board. All of the connections mentioned up until now each need to be terminated on one end by a single pin dupont connector. Connect the fan from the Nevermore filter to the `Vout+` and `Vout-` terminals. Now, connect the `Vin+` wire to the 24V or 5V header on the Mightyboard, whichever your chosen fan uses, next connect the `Vin-` wire to the ground in the `J18 1280_EXTRA_2` group of headers, lastly connect the `trig/PWM` wire to the pin labeled `IO5/PF1` in the `J18 1280_EXTRA_2` group of headers.
+
+## Klipper and Gcode usage
+
+Include the [`Nevermore_Filter.cfg`](https://github.com/Sgail7/Replicator-Revival-Project/blob/main/Klipper/Macros/Nevermore_Filter.cfg) macro in your `printer.cfg`. Doing this will make a new macro appear called `toggle_nevermore`; to check that your fan is wired up properly, click this macro, your filter fan should be turned on to 100%. If it is not, check that the `trig/PWM` wire is connected to the right pin, and that there are no cold solder joints or broken connections in the wiring.
+
+All documentation of this macro can be found in its original repository, found [here](https://github.com/top-gun/Nevermore-Klipper). To make the filter run once a print starts, add `SET_FAN_SPEED FAN=Nevermore SPEED=1` to your start Gcode. To make it turn off when a print is finished, add `UPDATE_DELAYED_GCODE ID=filter_off DURATION=180` to your end Gcode. If you are using one of the profiles provided in this repository, then these lines will already be added for the appropriate filaments. If you would like your filter fan to run more slowly for quieter operation, you can reduce the `SPEED=1` line to something like `SPEED=0.5`. In that example, the filter fan will run at 50% speed instead of 100% speed. If you would like the filter to remain on for more or less time after a print is finished, you can edit `DURATION=180` to whatever number you would like. This command takes the number provided as seconds to keep fan powered.
 
 # Macros
 
