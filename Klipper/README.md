@@ -293,7 +293,7 @@ This macro enables input shaping via an ADXL 345 connected to a raspberrypi. Thi
 </details>
 
 ### LED_Macros.cfg
-* <details><summary>Click here to read about this macro</summary>
+<details><summary>Click here to read about this macro</summary>
 <p>
 
 This macro add convient commands to control the LED strip found on the Makerbot 2 and 2X. There is a short tutorial inside of the [LED_Macros.cfg](https://github.com/Sgail7/Replicator-Revival-Project/blob/main/Klipper/Macros/LED_Macros.cfg) on how to make your own LED macro, should the provided ones not include what you are looking for.
