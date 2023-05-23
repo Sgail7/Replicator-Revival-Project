@@ -247,7 +247,7 @@ Macros are arguably the most useful aspect of Klipper as a firmware. They allow 
 Below are short descriptions of each of the macros included in this repository and what they do.
 
 ### Beeper_Commands.cfg
-<details><summary>Beeper_Commands.cfg</summary>
+<details><summary>Click here to read about this macro</summary>
 <p>
 
 This macro includes commands enabling gcode commands for `M300` and `M72`.
@@ -268,7 +268,8 @@ As an example, `M72 P5` would play the short section of Beethoven's 5th Symphony
 </p>
 </details>
 
-<details><summary>Important_Gcode_Functionality_Macros.cfg</summary>
+### Important_Gcode_Functionality_Macros.cfg
+<details><summary>Click here to read about this macro</summary>
 <p>
 
 This macro includes commands enabling gcode commands for `M900`, `M600`, and `M204`.
@@ -282,7 +283,8 @@ M204 allows for the printer's acceleration to be set mid-print. This means that 
 </p>
 </details>
 
-<details><summary>Input_Shaper.cfg</summary>
+### Input_Shaper.cfg
+<details><summary>Click here to read about this macro</summary>
 <p>
 
 This macro enables input shaping via an ADXL 345 connected to a raspberrypi. This macro adds no commands, it is purely a convience macro to allow for one line to be uncommented to enable input shaping. For a guide on how to set up your printer to run input shaper, please visit [the official Klipper documentation on input shaping](https://www.klipper3d.org/Measuring_Resonances.html).
@@ -290,7 +292,8 @@ This macro enables input shaping via an ADXL 345 connected to a raspberrypi. Thi
 </p>
 </details>
 
-<details><summary>LED_Macros.cfg</summary>
+### LED_Macros.cfg
+<details><summary>Click here to read about this macro</summary>
 <p>
 
 This macro add convient commands to control the LED strip found on the Makerbot 2 and 2X. There is a short tutorial inside of the [LED_Macros.cfg](https://github.com/Sgail7/Replicator-Revival-Project/blob/main/Klipper/Macros/LED_Macros.cfg) on how to make your own LED macro, should the provided ones not include what you are looking for.
@@ -316,7 +319,8 @@ Below is a list of all included LED commands found in this macro:
 </p>
 </details>
 
-<details><summary>Nevermore_Filter.cfg</summary>
+### Nevermore_Filter.cfg
+<details><summary>Click here to read about this macro</summary>
 <p>
 
 This macro adds commands to easy control your nevermore filter's operation during a print. It defines the Nevermore's fan inside of klipper and the pin that controls it. The commands `SET_FAN_SPEED FAN=Nevermore SPEED=1` and `UPDATE_DELAYED_GCODE ID=filter_off DURATION=180` are used in the start and end gcode, respectively, to control the filter's operation.
@@ -328,7 +332,8 @@ This macro adds commands to easy control your nevermore filter's operation durin
 </p>
 </details>
 
-<details><summary>Printer_Tuning_Macros.cfg</summary>
+### Printer_Tuning_Macros.cfg
+<details><summary>Click here to read about this macro</summary>
 <p>
 
 This macro adds a collection of convience macros for common tuning steps. The included macros are `PID_EXTRUDER`, `PID_EXTRUDER1`, `PID_BED`, `Level_to_Bed_Screws`, and `Pressure_Advance_Tuning`.
@@ -346,9 +351,8 @@ This macro adds a collection of convience macros for common tuning steps. The in
 </p>
 </details>
 
-<details><summary>
-## Temps.cfg
-</summary>
+### Temps.cfg
+<details><summary>Click here to read about this macro</summary>
 <p>
 
 This macro adds the temperatures of the raspberry pi's MCU and the chamber temperature to the temperature readouts of a chosen interface.
