@@ -246,6 +246,7 @@ Macros are arguably the most useful aspect of Klipper as a firmware. They allow 
 ```
 Below are short descriptions of each of the macros included in this repository and what they do.
 
+### Beeper_Commands.cfg
 <details><summary>Beeper_Commands.cfg</summary>
 <p>
 
