@@ -284,7 +284,7 @@ M204 allows for the printer's acceleration to be set mid-print. This means that 
 <details><summary>Input_Shaper.cfg</summary>
 <p>
 
-This macro enables input shaping via an ADXL 345 connected to a raspberrypi. This macro adds no commands, it is purely a convience macro to allow for one line to be uncommented to enable input shaping. For a guide on how to set up your printer to run input shaper, please visit [The official Klipper documentation on input shaping](https://www.klipper3d.org/Measuring_Resonances.html).
+This macro enables input shaping via an ADXL 345 connected to a raspberrypi. This macro adds no commands, it is purely a convience macro to allow for one line to be uncommented to enable input shaping. For a guide on how to set up your printer to run input shaper, please visit [the official Klipper documentation on input shaping](https://www.klipper3d.org/Measuring_Resonances.html).
 
 </p>
 </details>
@@ -318,17 +318,39 @@ Below is a list of all included LED commands found in this macro:
 <details><summary>Nevermore_Filter.cfg</summary>
 <p>
 
+This macro adds commands to easy control your nevermore filter's operation during a print. It defines the Nevermore's fan inside of klipper and the pin that controls it. The commands `SET_FAN_SPEED FAN=Nevermore SPEED=1` and `UPDATE_DELAYED_GCODE ID=filter_off DURATION=180` are used in the start and end gcode, respectively, to control the filter's operation.
+
+`SET_FAN_SPEED FAN=Nevermore SPEED=1` defines the speed that the fan runs at. It is definable in increments of 1%. For example, `SET_FAN_SPEED FAN=Nevermore SPEED=0.7` would set the nevermore's fan to run at 70% speed. This line can be added to your start gcode to turn the filter on when a print starts.
+
+`UPDATE_DELAYED_GCODE ID=filter_off DURATION=180` defines the amount of time the Nevermore's fan should be left on after a print has been completed. This is definable in increments of 1 second. For example, `UPDATE_DELAYED_GCODE ID=filter_off DURATION=120` would leave the fan on for 120 seconds, or two minutes, after the command is run. This can be added to your end gcode to turn the filter off after a specified amount of time, allowing the filter to cleanse any remaining VOCs from the build chamber.
+
 </p>
 </details>
 
 <details><summary>Printer_Tuning_Macros.cfg</summary>
 <p>
 
+This macro adds a collection of convience macros for common tuning steps. The included macros are `PID_EXTRUDER`, `PID_EXTRUDER1`, `PID_BED`, `Level_to_Bed_Screws`, and `Pressure_Advance_Tuning`.
+
+`PID_EXTRUDER` **Need to check PID commands to see how to input target temperature in command line**
+
+`PID_EXTRUDER1`
+
+`PID_BED`
+
+`Level_to_Bed_Screws` simply runs the command `BED_SCREWS_ADJUST`, which is klipper's built in manual leveling helper script.
+
+`Pressure_Advance_Tuning` is meant to be run right before starting the pressure advance tower defined in the [Pressure Advance section in the official documentation](https://www.klipper3d.org/Pressure_Advance.html). It runs the commands defined in the offical documentation for slowing acceleration and setting the increments of increase to those given for direct drive extruders.
+
 </p>
 </details>
 
 <details><summary>Temps.cfg</summary>
 <p>
+
+This macro adds the temperatures of the raspberry pi's MCU and the chamber temperature to the temperature readouts of a chosen interface.
+
+**Note: The chamber temperature sensor in this macro is a DS18B20. This must be installed separately and be configured according to [the official documentation](https://www.klipper3d.org/Config_Reference.html#ds18b20-temperature-sensor). The Raspi MCU must also be configured in your `printer.cfg` for this sensor to be enabled. [See the hardware readme for more info on how to install this sensor](https://www.klipper3d.org/Config_Reference.html#ds18b20-temperature-sensor).
 
 </p>
 </details>
