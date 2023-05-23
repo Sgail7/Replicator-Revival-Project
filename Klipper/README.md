@@ -346,7 +346,9 @@ This macro adds a collection of convience macros for common tuning steps. The in
 </p>
 </details>
 
-<details><summary>Temps.cfg</summary>
+<details><summary>
+## Temps.cfg
+</summary>
 <p>
 
 This macro adds the temperatures of the raspberry pi's MCU and the chamber temperature to the temperature readouts of a chosen interface.
