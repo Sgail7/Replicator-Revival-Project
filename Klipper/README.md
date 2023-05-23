@@ -5,12 +5,13 @@
 - [Nozzle Alignment](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#nozzle-alignment)
 - [Printer Profiles](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#printer-profile-information)
 - [Nevermore Filter](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#nevermore-filter)
-- [Macros](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#nevermore-filter)
-- [BlTouch](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#nevermore-filter)
+- [Macros](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#macros)
+- [BlTouch](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#bltouch)
 
 # Installation
 
-## KIAUH
+<details><summary>KIAUH</summary>
+<p>
 
 **Note:** KIAUH takes a little bit more work to set up, but is ideal for running
 multiple instances of klipper, and also makes it possible to install any and
@@ -183,6 +184,9 @@ Congratulations! You now have Klipper installed on your Replicator 2 or 2X!
 Head over to https://www.klipper3d.org/ for documentation on futher tuning
 of your printer and to learn the specifics of what Klipper is capable of.
 
+</p>
+</details>
+
 # Configs
 
 Configuration files for the Replicator 1, 2, and 2X can all be found in the [Configs folder](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/Configs)
@@ -244,7 +248,7 @@ Macros are arguably the most useful aspect of Klipper as a firmware. They allow 
 #Short description of macro
 [include example.cfg]
 ```
-Below are short descriptions of each of the macros included in this repository and what they do.
+Below are short descriptions of each of the macros included in this repository and what they do:
 
 ### Beeper_Commands.cfg
 <details><summary>Click here to read about this macro</summary>
@@ -362,5 +366,6 @@ This macro adds the temperatures of the raspberry pi's MCU and the chamber tempe
 </p>
 </details>
 
-# Bltouch
+# BlTouch
 
+A BLTouch is a bed probe that uses a plunger controlled by a solenoid to probe the distance between itself and the bed of a 3D printer. Taking measurements at multiple points around the bed and creating a mesh from them allows Klipper to automatically compensate for deformaties in the bed. I consider a BLTouch absolutely necessary to get good prints from these printers. Installing a BLTouch will require you to raise the left nozzle up by a few mm to provide clearance for the z-axis to move up and down during the print, which will take away the Dual Extrusion capabilities of this printer. However, I believe that a perfect first layer every print with no elephant's foot is far more valuable than the finicky Dual Extrusion the Replicator 2X is equipped with in its stock form. For an installation guide and more information on running a BLTouch on a Replicator machine, please see the write-up on it found in the [Hardware Section](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Hardware#BLTouch).
