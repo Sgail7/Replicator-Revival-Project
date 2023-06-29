@@ -10,6 +10,3 @@
 [submodule "Klipper/Nevermore_Filters"]
 	path = Klipper/Nevermore_Filters
 	url = https://github.com/nevermore3d/Nevermore_Micro
-[submodule "Mightyboard"]
-	path = Mightyboard
-	url = https://github.com/Sgail7/Mightyboard-Rev-G-and-H
