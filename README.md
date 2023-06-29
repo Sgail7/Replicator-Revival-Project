@@ -12,40 +12,44 @@ about these printers is hard to come by, and finding people who have a lot of ex
 with them is even harder!
 
 # Table of Contents
-- **[How to Choose Your Firmware](https://github.com/Sgail7/Replicator-Revival-Project#how-to-choose-an-operating-system)**
+- **[How to Choose Your Firmware](#how-to-choose-an-operating-system)**
 
-- **[Klipper](https://github.com/Sgail7/Replicator-Revival-Project#klipper)**
-    - [Installation](https://github.com/Sgail7/Replicator-Revival-Project/blob/main/Klipper/README_Klipper.md)
-    - [Configs](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/Configs)
-    - [Macros](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/Macros)
-    - [Nevermore Filter](https://github.com/nevermore3d/Nevermore_Micro/tree/ddc341e032cfdb93479e6ed0c258ce544beba87f)
-    - [Nozzle Alignment for 2X](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/Printer_Tuning)
-    - [Common Setting Values]()
-    - [PrusaSlicer Profiles](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/PrusaSlicer%20Profiles)
-    - [SuperSlicer Profiles](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper/SuperSlicer%20Profiles)
+<details><summary>Klipsper</summary>
+<p>
 
-- **[Sailfish](https://github.com/Sgail7/Replicator-Revival-Project#sailfish)**
-    - [Installation](https://github.com/Sgail7/Replicator-Revival-Project/blob/main/Sailfish/README_Sailfish.md)
-    - [ReplicatorG](https://github.com/makerbot/ReplicatorG/tree/d6f2b07785a5a5f1e172fb87cb4303b17c575d5d)
+- [Installation](Klipper/README.md#installation)
+- [Configs](Klipper/README.md#configs)
+- [Macros](Klipper/README.md#macros)
+- [Nevermore Filter](Klipper/README.md#nevermore-filter)
+- [Nozzle Alignment for 2X](Klipper/README.md#nozzle-alignment)
+- [Common Setting Values]()
+- [PrusaSlicer Profiles](Klipper/PrusaSlicer_Profiles)
+
+</p>
+</details>
+
+- **[Sailfish](#sailfish)**
+    - [Installation](Sailfish/README.md#installation)
+    - [ReplicatorG](Sailfish/ReplicatorG)
     - [Nozzle Alignment]()
     - [Common Setting Values]()
-    - [GPX](https://github.com/markwal/GPX)
-    - [GPXUi](https://github.com/markwal/GpxUi/tree/a081cbf4529dfca1eb040768e2729b70d6e36769)
-    - [PrusaSlicer Profiles](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Sailfish/PrusaSlicer%20Profiles)
+    - [GPX](Sailfish/GPX)
+    - [GPXUi](Sailfish/GPXUi)
+    - [PrusaSlicer Profiles](Sailfish/PrusaSlicer_Profiles)
 
-- **[Hardware](https://github.com/Sgail7/Replicator-Revival-Project#hardware)**
-    - [Bed Warping Information and Potential Fix](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Hardware/Bed%20Fixes)
-    - [X-Axis Cable Strain Relief]()
+- **[Hardware](#hardware)**
+    - [Bed Warping Information and Potential Fix](Hardware/README.md#bed-fixes)
+    - [X-Axis Cable Strain Relief](Hardware/README.md#x-axis-cable-strain-relief)
     - [General Maintenance]()
     - [Bed Surface]()
     - [Replacement Hardware]()
     - [Power Supply Information]()
 
-- **[Documentation](https://github.com/Sgail7/Replicator-Revival-Project#documentation)**
-    - [BOMs](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/BOMs)
-    - [CAD Assembiles](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/CAD%20Assemblies)
-    - [Printer Parts](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Printer%20Parts)
-    - [Mightyboard](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Mightyboard)
+- **[Documentation](#documentation)**
+    - [BOMs](Documentation/BOMs)
+    - [CAD Assembiles](Documentation/CAD_Assemblies)
+    - [Printer Parts](Documentation/Printer_Parts)
+    - [Mightyboard](Documentation/Mightyboard)
         - [Revision E](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Mightyboard/Revision%20E)
         - [Revision G](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Mightyboard/Revision%20G)
         - [Revision H](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Mightyboard/Revision%20H)
@@ -54,12 +58,10 @@ with them is even harder!
 
 ## Klipper
 The Klipper folder comprises all gathered information on running the [Klipper](https://github.com/Klipper3d/klipper) firmware on the Replicator
-1, 2, and 2X. This includes, but is not limited to, installation instructions, macros, configuration files,
-specific tuning files, and information on common settings.
+1, 2, and 2X. This includes, but is not limited to, installation instructions, macros, configuration files, specific tuning files, and information on common settings.
 
 ## Sailfish
-The Sailfish folder comprises all gathered information on running the [Sailfish](https://github.com/SaschaKP/Sailfish-MightyBoardFirmware/releases/tag/7.10.12) firmware on the Replicator 1, 2, and 2X.
-This includes, but is not limited to, installation instructions, copies of needed software, and information on common settings.
+The Sailfish folder comprises all gathered information on running the [Sailfish](https://github.com/SaschaKP/Sailfish-MightyBoardFirmware/releases/tag/7.10.12) firmware on the Replicator 1, 2, and 2X. This includes, but is not limited to, installation instructions, copies of needed software, and information on common settings.
 
 ## Hardware
 The Hardware folder comprises all gathered information on Hardware modifications to fix common issues on
@@ -78,7 +80,7 @@ The Printed Parts folder comprises all information concerning the addition of pr
 
 **WARNING**- Sailfish is no longer actively supported! If you choose to install Sailfish as your firmware, do not expect any updates or support for bugs that you may find!
 
-**NOTE**- Changing the firmware on your printer is in no way required. If you are happy with the results from the original Makerbot Industries firmware, then you can ignore the Klipper and Sailfish sections entirely! Significant information and improvement can still be gained from the [Hardware](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Hardware) and [Documentation](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation) sections alone.
+**NOTE**- Changing the firmware on your printer is in no way required. If you are happy with the results from the original Makerbot Industries firmware, then you can ignore the Klipper and Sailfish sections entirely! Significant information and improvement can still be gained from the [Hardware](Hardware/README.md) and [Documentation](Documentation/README.md) sections alone.
 
 ## Klipper
 If you are seeking modern print quality and speed, along with features not supported by Sailfish, then
