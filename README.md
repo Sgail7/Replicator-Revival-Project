@@ -14,7 +14,7 @@ with them is even harder!
 # Table of Contents
 - **[How to Choose Your Firmware](#how-to-choose-an-operating-system)**
 
-<details><summary>Klipsper</summary>
+<details><summary>Klipper</summary>
 <p>
 
 - [Installation](Klipper/README.md#installation)
