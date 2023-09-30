@@ -14,19 +14,14 @@ with them is even harder!
 # Table of Contents
 - **[How to Choose Your Firmware](#how-to-choose-an-operating-system)**
 
-<details><summary>Klipper</summary>
-<p>
-
-- [Installation](Klipper/README.md#installation)
-- [Configs](Klipper/README.md#configs)
-- [Macros](Klipper/README.md#macros)
-- [Nevermore Filter](Klipper/README.md#nevermore-filter)
-- [Nozzle Alignment for 2X](Klipper/README.md#nozzle-alignment)
-- [Common Setting Values]()
-- [PrusaSlicer Profiles](Klipper/PrusaSlicer_Profiles)
-
-</p>
-</details>
+- **[Klipper](#klipper)**
+    - [Installation](Klipper/README.md#installation)
+    - [Configs](Klipper/README.md#configs)
+    - [Macros](Klipper/README.md#macros)
+    - [Nevermore Filter](Klipper/README.md#nevermore-filter)
+    - [Nozzle Alignment for 2X](Klipper/README.md#nozzle-alignment)
+    - [Common Setting Values]()
+    - [PrusaSlicer Profiles](Klipper/PrusaSlicer_Profiles)
 
 - **[Sailfish](#sailfish)**
     - [Installation](Sailfish/README.md#installation)

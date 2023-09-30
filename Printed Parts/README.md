@@ -9,4 +9,6 @@
     - Fan Duct remixed by me
         - Blower Style Duct Remix: https://www.thingiverse.com/thing:1553334
         - BL Touch mount Duct Remix: https://www.thingiverse.com/thing:4564358
+    - Replacement X-Axis Carriage by me
+        - Based on VVilhelnn's design: https://www.thingiverse.com/thing:1533955
     - 

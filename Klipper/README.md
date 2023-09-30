@@ -1,12 +1,12 @@
 # Table of Contents
 
-- [Installation](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#installation)
-- [Configs](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#configs)
-- [Nozzle Alignment](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#nozzle-alignment)
-- [Printer Profiles](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#printer-profile-information)
-- [Nevermore Filter](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#nevermore-filter)
-- [Macros](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#macros)
-- [BlTouch](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Klipper#bltouch)
+- [Installation](#installation)
+- [Configs](#configs)
+- [Nozzle Alignment](#nozzle-alignmentt)
+- [Printer Profiles](#printer-profile-information)
+- [Nevermore Filter](#nevermore-filter)
+- [Macros](#macros)
+- [BlTouch](#bltouch)
 
 # Installation
 
@@ -220,7 +220,7 @@ For the Y-axis: Since the offset of line #7 is 0.00mm, I can find that there is 
 
 **Please be sure to use the correct origin profile for your printer configuration. The Center Origin profiles will not work with a Left Front Origin configured printer and vice versa.**
 
-PrusaSlicer is currently the slicer of choice for both my personal use and use at my University's Makerspace. I recommend using these profiles, as they will be up-to-date and are much more thoroughly tested. SuperSlicer is also a good option for these printers, as the extra part cooling fan settings it provides can help overcome issues of poor top solid infill finishes. If you are using a PrusaSlicer version that is older than 2.6, I highly recommend commenting out the M204 macro found in the [`Important_Gcode_Functionality_Macros.cfg`](https://github.com/Sgail7/Replicator-Revival-Project/blob/main/Klipper/Macros/Important_Gcode_Functionality_Macros.cfg) file. I found that certain acceleration commands would cause errors in this macro, causing prints to fail.
+PrusaSlicer is currently the slicer of choice for both my personal use and use at my university's Makerspace. I recommend using these profiles, as they will be up-to-date and are much more thoroughly tested. SuperSlicer is also a good option for these printers as the extra part cooling fan settings it provides can help overcome issues of poor top solid infill finishes. If you are using a PrusaSlicer version that is older than 2.6, I highly recommend commenting out the M204 macro found in the [`Important_Gcode_Functionality_Macros.cfg`](https://github.com/Sgail7/Replicator-Revival-Project/blob/main/Klipper/Macros/Important_Gcode_Functionality_Macros.cfg) file. I found that certain acceleration commands would cause errors in this macro, causing prints to fail.
 
 # Nevermore Filter
 
