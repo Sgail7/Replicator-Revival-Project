@@ -14,54 +14,48 @@ with them is even harder!
 # Table of Contents
 - **[How to Choose Your Firmware](#how-to-choose-an-operating-system)**
 
-- **[Klipper](#klipper)**
-    - [Installation](Klipper/README.md#installation)
-    - [Configs](Klipper/README.md#configs)
-    - [Macros](Klipper/README.md#macros)
-    - [Nevermore Filter](Klipper/README.md#nevermore-filter)
-    - [Nozzle Alignment for 2X](Klipper/README.md#nozzle-alignment)
-    - [Common Setting Values]()
-    - [PrusaSlicer Profiles](Klipper/PrusaSlicer_Profiles)
+- **[Klipper](Klipper\README.md)**
+    - [Installation](Klipper\README.md#installation)
+    - [Configs](Klipper\README.md#configs)
+    - [Macros](Klipper\README.md#macros)
+    - [Nevermore Filter](Klipper\README.md#nevermore-filter)
+    - [Nozzle Alignment for 2X](Klipper\README.md#nozzle-alignment)
+    - [PrusaSlicer Profiles](Klipper\PrusaSlicer_Profiles)
 
-- **[Sailfish](#sailfish)**
-    - [Installation](Sailfish/README.md#installation)
-    - [ReplicatorG](Sailfish/ReplicatorG)
+- **[Sailfish](Sailfish\README.md)**
+    - [Installation](Sailfish\README.md#installation)
+    - [ReplicatorG](Sailfish\ReplicatorG)
     - [Nozzle Alignment]()
-    - [Common Setting Values]()
-    - [GPX](Sailfish/GPX)
-    - [GPXUi](Sailfish/GPXUi)
-    - [PrusaSlicer Profiles](Sailfish/PrusaSlicer_Profiles)
+    - [GPX](Sailfish\GPX)
+    - [GPXUi](Sailfish\GPXUi)
+    - [PrusaSlicer Profiles](Sailfish\PrusaSlicer_Profiles)
 
-- **[Hardware](#hardware)**
-    - [Bed Warping Information and Potential Fix](Hardware/README.md#bed-fixes)
-    - [X-Axis Cable Strain Relief](Hardware/README.md#x-axis-cable-strain-relief)
-    - [General Maintenance]()
-    - [Bed Surface]()
-    - [Replacement Hardware]()
-    - [Power Supply Information]()
+- **[Hardware](Hardware\README.md)**
+    - [Chamber Temperature Sensor](Hardware\README.md#chamber-temperature-sensor)
+    - [BLTouch](Hardware\README.md#bltouch)
+    - [Buildplate Thermal Expansion](Hardware\README.md#buildplate-thermal-expansion)
 
-- **[Documentation](#documentation)**
+- **[Printed Parts](Printed_Parts\README.md)**
+
+- **[Documentation](Documentation\README.md)**
     - [BOMs](Documentation/BOMs)
-    - [CAD Assembiles](Documentation/CAD_Assemblies)
-    - [Printer Parts](Documentation/Printer_Parts)
-    - [Mightyboard](Documentation/Mightyboard)
-        - [Revision E](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Mightyboard/Revision%20E)
-        - [Revision G](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Mightyboard/Revision%20G)
-        - [Revision H](https://github.com/Sgail7/Replicator-Revival-Project/tree/main/Documentation/Mightyboard/Revision%20H)
+    - [CAD Assembiles](Documentation\CAD_Assemblies)
+    - [Mightyboard](Documentation\Mightyboard\README.md)
+        - [Revision E](Documentation\Mightyboard\Mightyboard_Rev_E)
+        - [Revision G](Documentation\Mightyboard\Mightyboard_Rev_G)
+        - [Revision H](Documentation\Mightyboard\Mightyboard_Rev_H)
 
 # Description of Main Directories
 
 ## Klipper
 The Klipper folder comprises all gathered information on running the [Klipper](https://github.com/Klipper3d/klipper) firmware on the Replicator
-1, 2, and 2X. This includes, but is not limited to, installation instructions, macros, configuration files, specific tuning files, and information on common settings.
+1, 2, and 2X. This includes, but is not limited to, installation instructions, macros, configuration files, and specific tuning files.
 
 ## Sailfish
-The Sailfish folder comprises all gathered information on running the [Sailfish](https://github.com/SaschaKP/Sailfish-MightyBoardFirmware/releases/tag/7.10.12) firmware on the Replicator 1, 2, and 2X. This includes, but is not limited to, installation instructions, copies of needed software, and information on common settings.
+The Sailfish folder comprises all gathered information on running the [Sailfish](https://github.com/SaschaKP/Sailfish-MightyBoardFirmware/releases/tag/7.10.12) firmware on the Replicator 1, 2, and 2X. This includes, but is not limited to, installation instructions and copies of needed software.
 
 ## Hardware
-The Hardware folder comprises all gathered information on Hardware modifications to fix common issues on
-the Replicator 1, 2, and 2X. These are gathered from experience and previous forum posts that may be hard to find or simply
-not exist anymore.
+The Hardware folder comprises all gathered information on Hardware modifications to fix common issues on the Replicator 1, 2, and 2X. These are gathered from experience and previous forum posts that may be hard to find or simply not exist anymore.
 
 ## Documentation
 The Documentation folder comprises all information concerning the construction and parts of these printers. This includes

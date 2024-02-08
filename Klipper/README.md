@@ -170,12 +170,12 @@ particular machine.
 Now, run the commands:
 ```
 sudo service klipper stop
-make flash FLASH_DEVICE=/dev/serial/by-id/dev/serial/by-id/[your-serial-id-here]
+make flash FLASH_DEVICE=/dev/serial/by-id/[your-serial-id-here]
 sudo service klipper start
 ```
 Where an example of FLASH_DEVICE will look like:
 ```
-FLASH_DEVICE=/dev/serial/by-id/dev/serial/by-id/usb-MakerBot_Industries_The_Replicator_5533034353435160A141-if00
+FLASH_DEVICE=/dev/serial/by-id/usb-MakerBot_Industries_The_Replicator_5533034353435160A141-if00
 ```
 This will flash your printer. If it fails, you may need to power off and then power on your printer,
 or attempt to connect and disconnect with Klipper. It should flash after you try one or both of these things.

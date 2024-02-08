@@ -1,1 +1,0 @@
-This is a place for a bunch of stuff about these printers :)
